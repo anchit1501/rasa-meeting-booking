@@ -21,14 +21,16 @@ class ActionBookMeeting(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        print('Hiii')
     
-        # name = tracker.get_slot("attendee")
-        # date = tracker.get_slot("date")
-        # time = tracker.get_slot("time")
+        name = tracker.get_slot("attendee")
+        print(name)
+        date = tracker.get_slot("date")
+        print(date)
+        time = tracker.get_slot("time")
+        print(time)
 
 
         # print("Booked with " +name+" on "+date+" at "+time)
-        dispatcher.utter_message(text="Hello World!")
+        dispatcher.utter_message(text="Meeting Booked")
 
         return []

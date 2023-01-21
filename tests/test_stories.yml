@@ -103,12 +103,12 @@ stories:
       - action: utter_ask_date
 
       - user: |
-          tomorrow
+          monday
         intent: meeting_date
       - action: utter_ask_time
 
       - user: |
           4 pm
         intent: meeting_time
-      - action: utter_meeting_booked
+      - action: action_book_meeting
 

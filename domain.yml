@@ -52,21 +52,47 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 
+# entities:
+#   - name
+#   - date
+#   - time
+
+slots:
+  attendee:
+    type: any
+    mappings:
+    - type: from_text
+      intent: meeting_attendee
+  date:
+    type: any
+    mappings:
+    - type: from_text
+      intent: meeting_date
+  time:
+    type: any
+    mappings:
+    - type: from_text
+      intent: meeting_time
+
+
 # slots:
 #   attendee:
 #     type: text
+#     influence_conversation: false
 #     mappings:
 #       - type: from_text
 #         intent: meeting_attendee
 
 #   date:
 #     type: text
+#     influence_conversation: false
 #     mappings:
 #       - type: from_text
 #         intent: meeting_date
 
 #   time:
 #     type: text
+#     influence_conversation: false
 #     mappings:
 #       - type: from_text
 #         intent: meeting_time

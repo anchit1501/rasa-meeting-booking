@@ -94,7 +94,7 @@ nlu:
   examples: |
     - book a meet
     - book a meeting
-    - book a meeting with [Tanuj]
+    - book a meeting with [Tanuj](name)
 
 - intent: meeting_attendee
   examples: |
@@ -104,9 +104,18 @@ nlu:
 
 - intent: meeting_date
   examples: |
-    - 21/01/2023
-    - 22/1/2023
-    - 21/1/2023
+    - on monday
+    - on tuesday
+    - monday
+    - tuesday
+    - wednesday
+    - thurday
+    - friday
+    - monday will be good
+    - tuesday will be good\
+    - on wednesday
+    - on thurday
+    - on friday
 
 - intent: meeting_time
   examples: |
