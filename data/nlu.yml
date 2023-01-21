@@ -104,9 +104,9 @@ nlu:
 
 - intent: meeting_date
   examples: |
-    - today
-    - evening
-    - tomorrow
+    - 21/01/2023
+    - 22/1/2023
+    - 21/1/2023
 
 - intent: meeting_time
   examples: |

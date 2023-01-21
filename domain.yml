@@ -45,6 +45,50 @@ responses:
   utter_meeting_booked:
   - text: "your meeting has been booked"
 
+actions:
+  - action_book_meeting
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+# slots:
+#   attendee:
+#     type: text
+#     mappings:
+#       - type: from_text
+#         intent: meeting_attendee
+
+#   date:
+#     type: text
+#     mappings:
+#       - type: from_text
+#         intent: meeting_date
+
+#   time:
+#     type: text
+#     mappings:
+#       - type: from_text
+#         intent: meeting_time
+
+
+
+    # type: text
+    # influence_conversation: false
+    # # mappings:
+    # # - type: from_entity
+    # #   entity: attendee
+
+  # date:
+  #   type: text
+  #   influence_conversation: false
+  #   mappings:
+  #   - type: from_entity
+  #     entity: date
+
+  # time:
+  #   type: text
+  #   influence_conversation: false
+  #   mappings:
+  #   - type: from_entity
+  #     entity: time

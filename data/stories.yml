@@ -32,7 +32,7 @@ stories:
   - story: book_meeting
     steps:
       - intent: book_meeting
-      
+
       - action: utter_ask_attendee
       - intent: meeting_attendee
 
@@ -42,5 +42,5 @@ stories:
       - action: utter_ask_time
       - intent: meeting_time
 
-      - action: utter_meeting_booked
+      - action: action_book_meeting
       
