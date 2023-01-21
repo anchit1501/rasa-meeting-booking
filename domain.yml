@@ -47,15 +47,11 @@ responses:
 
 actions:
   - action_book_meeting
+  - action_free_slots
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
-# entities:
-#   - name
-#   - date
-#   - time
 
 slots:
   attendee:
@@ -73,48 +69,3 @@ slots:
     mappings:
     - type: from_text
       intent: meeting_time
-
-
-# slots:
-#   attendee:
-#     type: text
-#     influence_conversation: false
-#     mappings:
-#       - type: from_text
-#         intent: meeting_attendee
-
-#   date:
-#     type: text
-#     influence_conversation: false
-#     mappings:
-#       - type: from_text
-#         intent: meeting_date
-
-#   time:
-#     type: text
-#     influence_conversation: false
-#     mappings:
-#       - type: from_text
-#         intent: meeting_time
-
-
-
-    # type: text
-    # influence_conversation: false
-    # # mappings:
-    # # - type: from_entity
-    # #   entity: attendee
-
-  # date:
-  #   type: text
-  #   influence_conversation: false
-  #   mappings:
-  #   - type: from_entity
-  #     entity: date
-
-  # time:
-  #   type: text
-  #   influence_conversation: false
-  #   mappings:
-  #   - type: from_entity
-  #     entity: time

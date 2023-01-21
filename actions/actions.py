@@ -34,3 +34,16 @@ class ActionBookMeeting(Action):
         dispatcher.utter_message(text="Meeting Booked")
 
         return []
+
+class ActionProvideSlots(Action):
+
+    def name(self) -> Text:
+        return "action_free_slots"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # print("Booked with " +name+" on "+date+" at "+time)
+        dispatcher.utter_message(text="Availability 2pm - 4pm")
+
+        return []

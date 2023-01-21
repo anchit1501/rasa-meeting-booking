@@ -39,7 +39,7 @@ stories:
       - action: utter_ask_date
       - intent: meeting_date
 
-      - action: utter_ask_time
+      - action: action_free_slots
       - intent: meeting_time
 
       - action: action_book_meeting
