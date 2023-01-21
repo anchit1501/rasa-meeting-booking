@@ -89,3 +89,28 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: book_meeting
+  examples: |
+    - book a meet
+    - book a meeting
+    - book a meeting with [Tanuj]
+
+- intent: meeting_attendee
+  examples: |
+   - tanuj
+   - sunita
+   - bharti
+
+- intent: meeting_date
+  examples: |
+    - today
+    - evening
+    - tomorrow
+
+- intent: meeting_time
+  examples: |
+    - 3 pm
+    - 4:30 pm
+    - 9 am
+    - 11:30 am

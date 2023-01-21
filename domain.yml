@@ -8,6 +8,10 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - book_meeting
+  - meeting_attendee
+  - meeting_date
+  - meeting_time
 
 responses:
   utter_greet:
@@ -28,6 +32,18 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_ask_attendee:
+  - text: "With whom should i book a meeting for"
+
+  utter_ask_time:
+  - text: "What time should i schedule the meeting?"
+
+  utter_ask_date:
+  - text: "What day should i book a meeting for"
+
+  utter_meeting_booked:
+  - text: "your meeting has been booked"
 
 session_config:
   session_expiration_time: 60
